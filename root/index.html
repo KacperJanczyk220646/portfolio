@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Kacper Janczyk</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Kacper Janczyk</h1>
+        <p>I'm [Your Name], a passionate [Your Profession]</p>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum quam augue, a fermentum urna pretium ut. Ut tincidunt id dolor quis convallis. In eu ultricies turpis, et blandit est. Sed ut consectetur massa. Nunc vitae consectetur dolor. Aenean varius interdum volutpat. Aliquam consequat vel nisi eget porta.
+
+            Sed gravida mauris a tortor fermentum hendrerit. Etiam faucibus nec dolor a luctus. Mauris lobortis blandit volutpat. Vivamus pulvinar, dolor eget lacinia imperdiet, dui nunc tincidunt nibh, sed fringilla quam felis vitae neque. Fusce ultrices massa eleifend sem euismod, in fringilla neque molestie. Mauris vehicula elementum tortor quis placerat. Maecenas eleifend diam tortor, maximus pharetra nulla interdum pretium. Cras orci libero, semper eget nunc vel, lacinia porttitor nisi.
+            
+            Donec eget libero leo. Vestibulum consequat, ante sed congue egestas, eros sapien finibus augue, a imperdiet erat quam ut odio. Fusce sodales ligula urna, pretium semper libero iaculis nec. Integer ut euismod ex. Nam iaculis at purus id sagittis. Donec ut magna vitae lectus consequat ullamcorper. Maecenas nulla odio, fringilla vitae gravida venenatis, sollicitudin at nisl. Sed vel odio tempus, bibendum quam nec, porta quam. Pellentesque dictum ut tortor sollicitudin tristique. Sed quis ultrices tortor, in bibendum mauris. Ut at dui mauris. Integer ultricies.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="project">
+            <h3>Project 1</h3>
+            <p>A brief description of the project.</p>
+            <a href="#project-modal-1" class="button">View Project</a>
+        </div>
+
+        <div class="project">
+            <h3>Project 2</h3>
+            <p>A brief description of the project.</p>
+            <a href="#project-modal-2" class="button">View Project</a>
+        </div>
+
+        <!-- Modals for displaying project details -->
+        <div id="project-modal-1" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="window.location.hash='';">&times;</span>
+                <div id="modal-details">
+                    <h3>Project 1 Details</h3>
+                    <p>Detailed information about Project 1.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="project-modal-2" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="window.location.hash='';">&times;</span>
+                <div id="modal-details">
+                    <h3>Project 2 Details</h3>
+                    <p>Detailed information about Project 2.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>If you'd like to get in touch, feel free to reach out through one of the platforms below.</p>
+        <ul>
+            <li>
+                <a href="#" id="emailButton">
+                <i class="fas fa-envelope fa-5x"></i> Mail
+                </a>
+            </li>
+            <li>
+                <a href="https://linkedin.com" target="_blank">
+                <i class="fab fa-linkedin fa-5x"></i> LinkedIn
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/yourusername" target="_blank">
+                <i class="fab fa-github fa-5x"></i> GitHub
+                </a>
+            </li>
+        </ul>
+    </section>
+
+        <!-- Modal for Email -->
+    <div id="emailModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Contact via Email</h2>
+            <p>Feel free to reach me at:</p>
+            <p><strong>kacperjanczykk@gmail.com</strong></p>
+            <button onclick="copyEmail()">Copy Email</button>
+        </div>
+    </div>
+
+    <script src="scripts/script.js"></script>
+
+    <footer>
+        <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+
